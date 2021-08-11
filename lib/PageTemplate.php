@@ -1,8 +1,5 @@
 <?php
-
 class PageTemplate {
-
-    public $PageTitle;
-    
+    public $PageTitle;    
     public $ContentBody;
 }

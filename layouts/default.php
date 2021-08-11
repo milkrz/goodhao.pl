@@ -1,7 +1,5 @@
 <?php
-
 require_once('lib/PageTemplate.php');
-
 ?>
 
 <!DOCTYPE HTML>
