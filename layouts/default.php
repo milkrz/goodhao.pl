@@ -38,22 +38,16 @@ if($TPL->DebugMode)
         <!-- Toolbar Begin -->
         <div class="toolbar-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-9 col-12">
-                        <div class="toolbar-contact">
-                            <p><img src="/images/email.png" /><a class="px-2" href="mailto:info@goodhao.pl">info@goodhao.pl</a></p>
-                            <p><img src="/images/phone.png" /><a class="px-2" href="tel:+46345678239">(+48) 345 678 239</a></p>
-                            <p><img src="/images/google-maps.png" />Adres: Mikołaja Kopernika23, 34-223 Warszawa</p>
-                        </div>
+                <div class="row mt-2 mb-2 toolbar-contact">
+                    <div class="col-xl-8 col-lg-12 col-12 text-xl-start text-lg-center text-center">
+                        <p class="my-0 py-0 d-sm-inline-block"><img src="/images/email.png" class="me-2" /><a class="pe-2" href="mailto:info@goodhao.pl">info@goodhao.pl</a></p>
+                        <p class="my-0 py-0 d-sm-inline-block"><img src="/images/phone.png" class="me-2" /><a class="pe-2" href="tel:+46345678239">(+48) 345 678 239</a></p>
+                        <p class="mt-lg-1 mt-sm-1 my-0 py-0 d-xl-inline-block"><img src="/images/google-maps.png" class="me-2" />Adres: Mikołaja Kopernika23, 34-223 Warszawa</p>
                     </div>
-                    <div class="col-lg-4 col-md-3 col-12">
-                        <div class="toolbar-sl-share">
-                            <ul>
-                                <li><a href="#"><img src="/images/facebook.png" /></a></li>
-                                <li><a href="#"><img src="/images/twitter.png" /></i></a></li>
-                                <li><a href="#"><img src="/images/youtube.png" /></i></a></li>
-                            </ul>
-                        </div>
+                    <div class="col-xl-4 col-lg-12 col-12 text-xl-end text-lg-center text-center mt-lg-1 mt-sm-1">
+                        <a href="#"><img src="/images/facebook.png" class="me-2" /></a>
+                        <a href="#"><img src="/images/twitter.png" class="me-2" /></a>
+                        <a href="#"><img src="/images/youtube.png" class="me-2" /></a>
                     </div>
                 </div>
             </div>
@@ -122,6 +116,14 @@ if($TPL->DebugMode)
             {
                 ?>
                 <div id="idDebug" class="alert alert-danger">Uwaga! Tryb debug</div>
+                <div class="alert alert-info">
+                    <div class="d-none d-xl-block font-weight-bold">X-LARGE (XL)</div>
+                    <div class="d-none d-lg-block d-xl-none font-weight-bold">LARGE (LG)</div>
+                    <div class="d-none d-md-block d-lg-none font-weight-bold">MEDIUM (MD)</div>
+                    <div class="d-none d-sm-block d-md-none font-weight-bold">SMALL (SM)</div>
+                    <div class="d-block d-sm-none alert font-weight-bold">X-SMALL (Defaut)</div>
+                </div> 
+
                 <?php
             }
             ?>

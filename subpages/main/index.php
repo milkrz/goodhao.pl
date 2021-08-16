@@ -18,36 +18,43 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Sit</td>
-      <td>Amet</td>
-      <td>
-        <button type="button" class="btn btn-danger btn-sm px-3">
-          <i class="fas fa-times"></i>
-        </button>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Adipisicing</td>
-      <td>Elit</td>
-      <td>
-        <button type="button" class="btn btn-danger btn-sm px-3">
-          <i class="fas fa-times"></i>
-        </button>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Hic</td>
-      <td>Fugiat</td>
-      <td>
-        <button type="button" class="btn btn-danger btn-sm px-3">
-          <i class="fas fa-times"></i>
-        </button>
-      </td>
-    </tr>
+    <?php
+      for($i=1;$i<40;$i+=3)
+      {
+    ?>
+      <tr>
+        <th scope="row"><?php echo $i+0 ?></th>
+        <td>Sit</td>
+        <td>Amet</td>
+        <td>
+          <button type="button" class="btn btn-danger btn-sm px-3">
+            <i class="fas fa-times"></i>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"><?php echo $i+1 ?></th>
+        <td>Adipisicing</td>
+        <td>Elit</td>
+        <td>
+          <button type="button" class="btn btn-danger btn-sm px-3">
+            <i class="fas fa-times"></i>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"><?php echo $i+2 ?></th>
+        <td>Hic</td>
+        <td>Fugiat</td>
+        <td>
+          <button type="button" class="btn btn-danger btn-sm px-3">
+            <i class="fas fa-times"></i>
+          </button>
+        </td>
+      </tr>
+    <?php
+      }
+    ?>
   </tbody>
 </table>
 
