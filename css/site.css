@@ -543,11 +543,8 @@
         font-family: ToolbarFont;
     }
     
-    .footer .footer-bottom {}
-    
     .footer .footer-bottom .inner {
         padding: 30px 0;
-        border-top: 2px solid #eee;
     }
     
     .footer .footer-bottom p {

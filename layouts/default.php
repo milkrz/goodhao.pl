@@ -138,10 +138,10 @@ if($TPL->DebugMode)
                     <div class="inner">
                         <div class="row">                            
                             <div class="col-lg-6 col-md-6 col-12 text-center">
-                                    &copy; 2021 - goodhao.pl - <a href="/privacy">Polityka prywatności</a>
+                                    <p class="d-inline-block">&copy; 2021 - goodhao.pl - </p> <a href="/privacy">Polityka prywatności</a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 text-lg-end text-md-end text-center">
-                                    Wszelkie prawa zastrzeżone
+                            <div class="col-lg-6 col-md-6 col-12 text-center">
+                                    <p>Wszelkie prawa zastrzeżone</p>
                             </div>
                         </div>
                     </div>
