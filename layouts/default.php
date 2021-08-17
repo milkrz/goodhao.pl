@@ -39,12 +39,12 @@ if($TPL->DebugMode)
         <div class="toolbar-area">
             <div class="container">
                 <div class="row mt-2 mb-2 toolbar-contact">
-                    <div class="col-xl-8 col-lg-12 col-12 text-xl-start text-lg-center text-center">
+                    <div class="col-xl-8 col-12 text-xl-start text-center">
                         <p class="my-0 py-0 d-sm-inline-block"><img src="/images/email.png" class="me-2" /><a class="pe-2" href="mailto:info@goodhao.pl">info@goodhao.pl</a></p>
                         <p class="my-0 py-0 d-sm-inline-block"><img src="/images/phone.png" class="me-2" /><a class="pe-2" href="tel:+46345678239">(+48) 345 678 239</a></p>
                         <p class="mt-lg-1 mt-sm-1 my-0 py-0 d-xl-inline-block"><img src="/images/google-maps.png" class="me-2" />Adres: Mikołaja Kopernika23, 34-223 Warszawa</p>
                     </div>
-                    <div class="col-xl-4 col-lg-12 col-12 text-xl-end text-lg-center text-center mt-lg-1 mt-sm-1">
+                    <div class="col-xl-4 col-12 text-xl-end text-center mt-lg-1 mt-sm-1">
                         <a href="#"><img src="/images/facebook.png" class="me-2" /></a>
                         <a href="#"><img src="/images/twitter.png" class="me-2" /></a>
                         <a href="#"><img src="/images/youtube.png" class="me-2" /></a>
@@ -137,10 +137,10 @@ if($TPL->DebugMode)
                 <div class="container">
                     <div class="inner">
                         <div class="row">                            
-                            <div class="col-lg-6 col-md-6 col-12 text-center">
+                            <div class="col-md-6 col-12 text-center">
                                     <p class="d-inline-block">&copy; 2021 - goodhao.pl - </p> <a href="/privacy">Polityka prywatności</a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 text-center">
+                            <div class="col-md-6 col-12 text-center">
                                     <p>Wszelkie prawa zastrzeżone</p>
                             </div>
                         </div>
