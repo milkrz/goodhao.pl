@@ -17,8 +17,8 @@ if ($TPL->DebugMode) {
 
     <title>goodhao.pl - kursy językowe</title>
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="goodhao.pl - kursy językowe" />
+    <meta name="keywords" content="<?php include("common/keywords.php")?>" />
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/images/favicon.png" />
@@ -110,11 +110,11 @@ if ($TPL->DebugMode) {
             if ($TPL->DebugMode) {
             ?>
                 <div class="alert alert-info">
-                    <div class="d-none d-xl-block font-weight-bold">X-LARGE (XL)</div>
-                    <div class="d-none d-lg-block d-xl-none font-weight-bold">LARGE (LG)</div>
-                    <div class="d-none d-md-block d-lg-none font-weight-bold">MEDIUM (MD)</div>
-                    <div class="d-none d-sm-block d-md-none font-weight-bold">SMALL (SM)</div>
-                    <div class="d-block d-sm-none alert font-weight-bold">X-SMALL (Defaut)</div>
+                    <div class="d-none d-xl-block font-weight-bold">X-LARGE (XL) ≥1200px</div>
+                    <div class="d-none d-lg-block d-xl-none font-weight-bold">LARGE (LG) ≥992px</div>
+                    <div class="d-none d-md-block d-lg-none font-weight-bold">MEDIUM (MD) ≥768px</div>
+                    <div class="d-none d-sm-block d-md-none font-weight-bold">SMALL (SM) ≥576px</div>
+                    <div class="d-block d-sm-none alert font-weight-bold">X-SMALL (Defaut) <576px</div>
                 </div>
 
             <?php
