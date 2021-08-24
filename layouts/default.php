@@ -133,7 +133,7 @@ if ($TPL->DebugMode) {
         <div class="container py-4">
             <div class="me-auto text-center">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>goodhao.pl</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>goodhao.pl</span></strong>. <a href="/privacy" >Wszelkie prawa zastrzeżone</a>
                 </div>
             </div>
         </div>
