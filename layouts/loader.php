@@ -11,12 +11,8 @@
         }
 
         $TPL = new PageTemplate();
-        $TPL->PageTitle = $page->PageTitle;
-        $TPL->PageContent = $page->PageContent;
-        if(file_exists($page->PageJs))
-        {
-            $TPL->PageJs = $page->PageJs;
-        }
+        $TPL->Page = $page;
+
         require_once("layouts/".$page->PageLayout.".php");
         exit;
     }   
