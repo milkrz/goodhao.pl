@@ -18,7 +18,7 @@ if ($TPL->DebugMode) {
     <title>goodhao.pl - kursy językowe</title>
 
     <meta name="description" content="goodhao.pl - kursy językowe" />
-    <meta name="keywords" content="<?php include("common/keywords.php")?>" />
+    <meta name="keywords" content="<?php include("common/keywords.php") ?>" />
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/images/favicon.png" />
@@ -91,7 +91,7 @@ if ($TPL->DebugMode) {
             </nav>
         </div>
     </header>
-    <!-- Header End -->    
+    <!-- Header End -->
 
     <!-- Hero Begin -->
     <div id="hero" class="d-flex " style="background: url('<?php echo $TPL->Page->HeaderBackground ?>') top center;">
@@ -102,14 +102,14 @@ if ($TPL->DebugMode) {
         </div>
     </div>
     <!-- Hero End -->
-    
+
     <!-- Main Begin -->
     <main id="main">
         <?php
-            include("partial/cookie.php");
+        include("partial/cookie.php");
         ?>
 
-        <div class="container">                    
+        <div class="container">
             <?php
             if ($TPL->DebugMode) {
             ?>
@@ -118,17 +118,15 @@ if ($TPL->DebugMode) {
                     <div class="d-none d-lg-block d-xl-none font-weight-bold">LARGE (LG) ≥992px</div>
                     <div class="d-none d-md-block d-lg-none font-weight-bold">MEDIUM (MD) ≥768px</div>
                     <div class="d-none d-sm-block d-md-none font-weight-bold">SMALL (SM) ≥576px</div>
-                    <div class="d-block d-sm-none alert font-weight-bold">X-SMALL (Defaut) <576px</div>
+                    <div class="d-block d-sm-none alert font-weight-bold">X-SMALL (Defaut) &lt;576px</div>
                 </div>
-
             <?php
             }
             ?>
-        
-        <?php 
-            include($TPL->Page->PageContent);
-        ?>
 
+            <?php
+            include($TPL->Page->PageContent);
+            ?>
         </div>
     </main>
     <!-- Main End -->
@@ -138,7 +136,7 @@ if ($TPL->DebugMode) {
         <div class="container py-4">
             <div class="me-auto text-center">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>goodhao.pl</span></strong>. <a href="/privacy" >Wszelkie prawa zastrzeżone</a>. Wersja <?php echo $version ?>
+                    &copy; Copyright <strong><span>goodhao.pl</span></strong>. <a href="/privacy">Wszelkie prawa zastrzeżone</a>. Wersja <?php echo $version ?>
                 </div>
             </div>
         </div>
