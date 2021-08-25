@@ -1,0 +1,3 @@
+<?php
+    echo "matura, kurs maturalny, przygotowanie do matury, poprawa matury, egzamin, kurs do egzaminu, przygotowanie do egzaminu, popraw egzaminu, egzaminy, przygotowanie do egzaminów, język polski, kurs języka polskiego, kurs przygotowawczy do języka polskiego, kurs maturalny języka angielskiego, poprawa języka polskiego, język angielski, kurs języka angielskiego, kurs przygotowawczy do języka angielskiego, poprawa języka angielskiego, język chiński, kurs języka chińskiego, kurs przygotowawczy do języka chińskiego, poprawa egzaminu, poprawa, polska, przygotowaczy, KET, PET, FCE, CAE, PCE, IELTS, HSK";
+?>

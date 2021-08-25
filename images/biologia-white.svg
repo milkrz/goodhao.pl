@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="95px" viewBox="0 0 63 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>biologia</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="HOME" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="COLOR-ver2" transform="translate(-287.000000, -3013.000000)" stroke="#FFFFFF">
+            <g id="biologia" transform="translate(289.000000, 3015.000000)">
+                <path d="M51.815,64.815 C54.139991,62.6493054 55.9171306,59.9621743 57,56.975 C61.055,45.81 54.84,33.06 42.91,26.625" id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M17.67,63.42 L16.055,67.815 C20.0922567,69.3807734 24.3047829,70.4502749 28.6,71" id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M37.72,41.125 C42.785,44.265 46.295,49.425 43.72,56.475 C43.4404171,57.265552 43.1062802,58.0357375 42.72,58.78" id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M53.215,83.425 C52.965,71 44.18,62.215 38.175,62.215 C34.785,62.215 33.29,65.05 33.29,68.09 L33.29,83.97" id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polygon id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="24.775 46.005 8.875 40.12 21.465 6.26 37.37 12.145"></polygon>
+                <ellipse id="Oval" stroke-width="0.5" fill="#FFFFFF" fill-rule="nonzero" cx="36.495" cy="32.425" rx="1.515" ry="1.51"></ellipse>
+                <circle id="Oval" stroke-width="0.5" fill="#FFFFFF" fill-rule="nonzero" cx="38.695" cy="67.58" r="1.515"></circle>
+                <path d="M27.285,39.275 L33.25,41.5 L35.14,36.43 C37.329809,37.2404778 39.7620221,36.122309 40.5724999,33.9325 C41.3829778,31.742691 40.264809,29.3104779 38.075,28.5 L40.355,22.4 L34.39,20.185" id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="25.33 7.69 28.185 0 36.355 3.025 33.5 10.715"></polyline>
+                <polyline id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="22.075 45.005 20.26 49.9 9.755 46.015 11.57 41.12"></polyline>
+                <polyline id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="17.35 49.43 15.535 54.325 10.345 52.415 12.16 47.515"></polyline>
+                <path d="M0,55 L23.92,64.19" id="Shape" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <rect id="Rectangle-path" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="8" y="85.815" width="50.61" height="5.055"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

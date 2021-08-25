@@ -2,8 +2,7 @@
 require_once('lib/PageTemplate.php');
 require_once('common/version.php');
 
-if($TPL->DebugMode)
-{
+if ($TPL->DebugMode) {
     $version = date("YmdHis");
 }
 
@@ -11,156 +10,157 @@ if($TPL->DebugMode)
 
 <!DOCTYPE HTML>
 <html lang="pl">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><?php echo $TPL->PageTitle; ?></title>   
-    <meta name="description" content="" />
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.svg" />
-    <link rel="stylesheet" href="/lib/bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css" /> 
-    <link rel="stylesheet" href="/css/site.css?v=<?php echo $version?>" />
-    <link rel="stylesheet" href="/css/fonts.css?v=<?php echo $version?>" />
+
+    <title>goodhao.pl - kursy językowe</title>
+
+    <meta name="description" content="goodhao.pl - kursy językowe" />
+    <meta name="keywords" content="<?php include("common/keywords.php")?>" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- CSS Lib -->
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/site.css?v=<?php echo $version ?>" />
 </head>
+
 <body>
-    <!-- Preloader Begin -->
-    <div class="preloader">
-        <div class="preloader-inner">
-            <div class="preloader-icon">
-                <span></span>
-                <span></span>
+    <!-- Top Bar Begin -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope"></i> <a href="mailto:contact@goodhao.pl">kontakt@goodhao.pl</a>
+                <i class="bi bi-phone"></i> +48 533 580 803
+            </div>
+            <div class="d-none d-lg-flex social-links align-items-center">
+                <!-- <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a> -->
+                <!-- <a href="https://facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a> -->
+                <!-- <a href="https://instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a> -->
+                <!-- <a href="https://linkedin.com" class="linkedin"><i class="bi bi-linkedin"></i></i></a> -->
+                <!-- <a href="https://youtube.com/c/goodhao.pl" target="_blank" class="linkedin"><i class="bi bi-youtube"></i></i></a> -->
             </div>
         </div>
     </div>
-    <!-- Preloader End -->
+    <!-- Top Bar End -->
 
-    
-    <header class="header navbar-area">        
-        <!-- Toolbar Begin -->
-        <div class="toolbar-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-9 col-12">
-                        <div class="toolbar-contact">
-                            <p><img src="/images/email.png" /><a class="px-2" href="mailto:info@goodhao.pl">info@goodhao.pl</a></p>
-                            <p><img src="/images/phone.png" /><a class="px-2" href="tel:+46345678239">(+48) 345 678 239</a></p>
-                            <p><img src="/images/google-maps.png" />Adres: Mikołaja Kopernika23, 34-223 Warszawa</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-3 col-12">
-                        <div class="toolbar-sl-share">
-                            <ul>
-                                <li><a href="#"><img src="/images/facebook.png" /></a></li>
-                                <li><a href="#"><img src="/images/twitter.png" /></i></a></li>
-                                <li><a href="#"><img src="/images/youtube.png" /></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Header Begin -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <a href="/" class="logo me-auto py-0"><img src="/images/logo-lite.png" alt="" class="img-fluid"></a>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <?php
+                    $script_url = $_SERVER["SCRIPT_URL"];
+                    $menu_items = array(
+                        array("url" => "/", "title" => "Oferta"),
+                        array("url" => "/news", "title" => "Aktualności"),
+                        array("url" => "/about", "title" => "O nas"),
+                        array("url" => "/faq", "title" => "FAQ"),
+                        array("url" => "/employee", "title" => "Wykładowcy"),
+                        array("url" => "/price-list", "title" => "Cennik"),
+                        array("url" => "/contact", "title" => "Kontakt"),
+                        array("url" => "/job", "title" => "Praca")
+                    );
+
+                    for ($i = 0; $i < sizeof($menu_items); $i++) {
+                        $menu_item = $menu_items[$i];
+                        $url = $menu_item["url"];
+                        $active = $script_url == $url ? "active" : "";
+                        $title = $menu_item["title"];
+
+                    ?>
+                        <li>
+                            <a class="nav-link <?php echo $active ?>" href="<?php echo $url ?>"><?php echo $title ?></a>
+                        </li>
+                    <?php
+                    }
+                    ?>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
         </div>
-        <!-- Toolbar End -->
-
-        <!-- Menu Begin -->
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                <div class="nav-inner">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="/images/logo.svg" alt="Logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                            <ul id="nav" class="navbar-nav ms-auto">
-                                <?php
-                                    $script_url = $_SERVER["SCRIPT_URL"];   
-                                    $menu_items = array(
-                                        array("url" => "/", "title" => "Start"),
-                                        array("url" => "/news", "title" => "Aktualności"),
-                                        array("url" => "/about", "title" => "O nas"),
-                                        array("url" => "/faq", "title" => "FAQ"),
-                                        array("url" => "/employee", "title" => "Wykładowcy"),
-                                        array("url" => "/price-list", "title" => "Cennik"),
-                                        array("url" => "/contact", "title" => "Kontakt"),
-                                        array("url" => "/job", "title" => "Praca")
-                                    );
-
-                                    for($i=0;$i<sizeof($menu_items);$i++)
-                                    {
-                                        $menu_item = $menu_items[$i];
-                                        $url = $menu_item["url"];
-                                        $active = $script_url == $url ? "active" : "";
-                                        $title = $menu_item["title"];
-                                        
-                                        ?>
-                                        <li class="nav-item">
-                                            <a class="page-scroll <?php echo $active ?>" href="<?php echo $url?>"><?php echo $title?></a>
-                                        </li>
-                                        <?php
-                                    }
-                                ?>       
-                            </ul>
-                        </div> 
-                    </nav> 
-                </div>
-                </div>
-            </div> 
-        </div> 
-        <!-- Menu End -->
     </header>
+    <!-- Header End -->    
+
+    <!-- Hero Begin -->
+    <div id="hero" class="d-flex " style="background: url('<?php echo $TPL->Page->HeaderBackground ?>') top center;">
+        <div class="w-100">
+            <h1 class="w-100 p-0 m-0 text-center">
+                <?php echo $TPL->Page->Title ?>
+            </h1>
+        </div>
+    </div>
+    <!-- Hero End -->
     
-    <div class="container">
-        <main role="main" class="pb-3">
+    <!-- Main Begin -->
+    <main id="main">
+        <?php
+            include("partial/cookie.php");
+        ?>
+
+        <div class="container">                    
             <?php
-            if($TPL->DebugMode)
-            {
-                ?>
-                <div id="idDebug" class="alert alert-danger">Uwaga! Tryb debug</div>
-                <?php
+            if ($TPL->DebugMode) {
+            ?>
+                <div class="alert alert-info">
+                    <div class="d-none d-xl-block font-weight-bold">X-LARGE (XL) ≥1200px</div>
+                    <div class="d-none d-lg-block d-xl-none font-weight-bold">LARGE (LG) ≥992px</div>
+                    <div class="d-none d-md-block d-lg-none font-weight-bold">MEDIUM (MD) ≥768px</div>
+                    <div class="d-none d-sm-block d-md-none font-weight-bold">SMALL (SM) ≥576px</div>
+                    <div class="d-block d-sm-none alert font-weight-bold">X-SMALL (Defaut) <576px</div>
+                </div>
+
+            <?php
             }
             ?>
-            <div id="idContent">
-                <?php include $TPL->PageContent; ?>
-            </div>
-        </main>
-    </div>
-    <footer class="border-top text-muted footer">
-        <div class="footer-bottom">
-                <div class="container">
-                    <div class="inner">
-                        <div class="row">                            
-                            <div class="col-lg-6 col-md-6 col-12 text-center">
-                                    &copy; 2021 - goodhao.pl - <a href="/privacy">Polityka prywatności</a>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12 text-lg-end text-md-end text-center">
-                                    Wszelkie prawa zastrzeżone
-                            </div>
-                        </div>
-                    </div>
+        
+        <?php 
+            include($TPL->Page->PageContent);
+        ?>
+
+        </div>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Begin -->
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="me-auto text-center">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>goodhao.pl</span></strong>. <a href="/privacy" >Wszelkie prawa zastrzeżone</a>. Wersja <?php echo $version ?>
                 </div>
             </div>
+        </div>
     </footer>
+    <!-- Footer End -->
 
-    <a href="#" class="scroll-top btn-hover">
-        <img src="/images/up-arrow.png" />
-    </a>
+    <div id="preloader">
+    </div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="/lib/jquery/jquery.min.js"></script>
     <script src="/lib/popper/popper.min.js"></script>
-    <script src="/lib/bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/site.js?v=<?php echo $version?>"></script>    
+
+    <script src="/js/site.js?v=<?php echo $version ?>"></script>
     <?php
-        if(isset($TPL->PageJs))
-        {
-            include($TPL->PageJs);
-        }
+    $js = $TPL->Page->PageJs;
+    if (file_exists($js)) {
+        include($js);
+    }
     ?>
 </body>
+
 </html>
