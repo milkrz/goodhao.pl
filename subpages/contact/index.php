@@ -8,7 +8,7 @@
     
 	<div class="row mt-4">
     <div class="col-md-4 col-12 text-center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.555719590356!2d21.410471947385297!3d50.95042892281875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718099880f44e95%3A0xdb0e5a778118ef24!2sStawki%2017%2F11%2C%2027-400%20Ostrowiec%20%C5%9Awi%C4%99tokrzyski!5e0!3m2!1spl!2spl!4v1629839180900!5m2!1spl!2spl" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40222.11568606038!2d21.400612!3d50.944391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718099880f44e95%3A0xdb0e5a778118ef24!2sStawki%2017%2F11%2C%2027-400%20Ostrowiec%20%C5%9Awi%C4%99tokrzyski!5e0!3m2!1spl!2spl!4v1629909037900!5m2!1spl!2spl" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="col-md-8 col-12 align-self-center">
         <p><b><h2 class="intro-text">GoodHao</b>
