@@ -24,7 +24,7 @@ require_once("layouts/loader.php");
         <p>Uczymy:</p>
         <ul>
             <li class="my-1">dzieci</li>
-            <li class="my-1">młodzierz</li>
+            <li class="my-1">młodzież</li>
             <li class="my-1">osoby dorosłe</li>
         </ul>
         <p>Przygotowujemy również do egzaminów <strong>HSK</strong>.</p>
