@@ -94,7 +94,7 @@ if ($TPL->DebugMode) {
     <!-- Header End -->
 
     <!-- Hero Begin -->
-    <div id="hero" class="d-flex " style="background: url('<?php echo $TPL->Page->HeaderBackground ?>') top center;">
+    <div id="hero" class="d-flex" style="background: url('<?php echo $TPL->Page->HeaderBackground ?>') top center;">
         <div class="w-100">
             <h1 class="w-100 p-0 m-0 text-center">
                 <?php echo $TPL->Page->Title ?>
@@ -104,12 +104,15 @@ if ($TPL->DebugMode) {
     <!-- Hero End -->
 
     <!-- Main Begin -->
-    <main id="main">
+    <main id="main" class="mainContent">
+        <div class="bg"></div>
+        <div>&nbsp;</div>
+        
         <?php
-        include("partial/cookie.php");
+            include("partial/cookie.php");
         ?>
 
-        <div class="container">
+        <div class="container ">            
             <?php
             if ($TPL->DebugMode) {
             ?>
@@ -123,14 +126,13 @@ if ($TPL->DebugMode) {
             <?php
             }
             ?>
-
             <?php
-            include($TPL->Page->PageContent);
+                include($TPL->Page->PageContent);
             ?>
         </div>
     </main>
     <!-- Main End -->
-
+        
     <!-- Footer Begin -->
     <footer id="footer">
         <div class="container py-4">
