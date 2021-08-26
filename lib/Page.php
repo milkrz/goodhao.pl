@@ -1,5 +1,7 @@
 <?php
 class Page{   
+    public Logger $Logger;
+
     public string $PageContent;
     public string $PageJs;
     public string $PageLayout;

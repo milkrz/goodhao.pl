@@ -1,12 +1,15 @@
 <?php
-    require_once('lib/Page.php');
-    $page = new Page(__FILE__, "default");    
+require_once('lib/Page.php');
+if (!isset($page)) {
+    $page = new Page(__FILE__, "default");
     $page->Title = "Wszelkie prawa zastrzeżone";
     $page->HeaderBackground = "/images/right.jpg";
     require_once("layouts/loader.php");
+    exit;
+}
 ?>
 
-<h2 class="my-4">Wszelkie prawa zastrzeżone</h2>
+<h2>Wszelkie prawa zastrzeżone</h2>
 
 <p>Wszelkie prawa autorskie do materiałów zawartych na stronie <strong>goodhao.pl</strong> i podstronach należą do właściciela portalu <strong>goodhao.pl</strong>.</p>
 <p>Wszystkie znaki towarowe zostały użyte tylko w celach informacyjnych i należą do ich właścicieli. Treść strony <strong>goodhao.pl</strong> wraz z podstronami i wszystkie ich elementy podlegają ochronie przewidzianej przez polskie oraz międzynarodowe prawo, w tym w szczególności przepisy o prawie autorskim i prawach pokrewnych oraz o zwalczaniu nieuczciwej konkurencji.</p>

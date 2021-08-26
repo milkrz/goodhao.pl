@@ -1,9 +1,13 @@
 <?php
 require_once('lib/Page.php');
-$page = new Page(__FILE__, "default");
-$page->Title = "Oferta";
-$page->HeaderBackground = "/images/offer.jpg";
-require_once("layouts/loader.php");
+if(!isset($page))
+{
+    $page = new Page(__FILE__, "default");
+    $page->Title = "Oferta";
+    $page->HeaderBackground = "/images/offer.jpg";
+    require_once("layouts/loader.php");
+    exit;
+}   
 ?>
 
 <div class="row mt-4">

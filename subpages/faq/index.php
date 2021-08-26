@@ -1,14 +1,17 @@
 <?php
 require_once('lib/Page.php');
-$page = new Page(__FILE__, "default");
-$page->Title = "Pytania i odpowiedzi";
-$page->HeaderBackground = "/images/faq.jpg";
-require_once("layouts/loader.php");
+if (!isset($page)) {
+    $page = new Page(__FILE__, "default");
+    $page->Title = "Pytania i odpowiedzi";
+    $page->HeaderBackground = "/images/faq.jpg";
+    require_once("layouts/loader.php");
+    exit;
+}
 ?>
 
 <div class="row">
     <div class="col-10 offset-1">
-        <div class="mt-4 accordion " id="id-d3b06d20b3864339999e62da4ea7e3ce">
+        <div class="accordion " id="id-d3b06d20b3864339999e62da4ea7e3ce">
             <div class="accordion-item my-3 border">
                 <h2 class="accordion-header" id="id-f071936f6634448880867e7bf1063241">
                     <button class="accordion-button collapsed " style="background-color: #FBFFE4;" type="button" data-bs-toggle="collapse" data-bs-target="#id-f6a49b07457943a9bb14b1486305bf8f" aria-expanded="false" aria-controls="id-f6a49b07457943a9bb14b1486305bf8f">

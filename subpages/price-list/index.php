@@ -1,11 +1,12 @@
 <?php
-    require_once('lib/Page.php');
-    $page = new Page(__FILE__, "default", "Title for news");    
+require_once('lib/Page.php');
+if (!isset($page)) {
+    $page = new Page(__FILE__, "default", "Title for news");
     $page->Title = "Cennik";
     $page->HeaderBackground = "/images/renovation.jpg";
     require_once("layouts/loader.php");
-    ?>
-    
-    <div>
-        <h2 class="my-5 text-center">Ta strona jest w budowie.</h2>
-    </div>
+    exit;
+}
+?>
+
+<h2 class="text-center">Ta strona jest w budowie.</h2>

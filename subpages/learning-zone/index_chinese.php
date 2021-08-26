@@ -1,8 +1,8 @@
 <?php
 require_once('lib/Page.php');
 if (!isset($page)) {
-    $page = new Page(__FILE__, "default");
-    $page->Title = "Dołącz do nas";
+    $page = new Page(__FILE__, "default", "Title for news");
+    $page->Title = "Strefa nauki - Język Chiński";
     $page->HeaderBackground = "/images/renovation.jpg";
     require_once("layouts/loader.php");
     exit;
