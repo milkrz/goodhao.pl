@@ -47,7 +47,7 @@ if (!isset($page)) {
             </div>
             <div>
             <i class="bi bi-geo-alt-fill me-2"></i> <strong>Adres</strong>
-                <p class="no_spacing">Oiedle Stawki 17/11</p>
+                <p class="no_spacing">Osiedle Stawki 17/11</p>
                 <p class="no_spacing">27-400 Ostrowiec Świętokrzyski</p>
             </div>
 
