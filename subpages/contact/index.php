@@ -47,18 +47,19 @@ if (!isset($page)) {
             </div>
             <div>
             <i class="bi bi-geo-alt-fill me-2"></i> <strong>Adres</strong>
-                <p class="no_spacing">Osiedle Stawki 17/11</p>
-                <p class="no_spacing">27-400 Ostrowiec Świętokrzyski</p>
+			<a href="google.navigation:q=50.95028348400445, 21.41137318479233&mode=d"><p class="no_spacing">Osiedle Stawki 17/11</p>
+                <p class="no_spacing">27-400 Ostrowiec Świętokrzyski</p></a>
+                
             </div>
 
             <div class="mt-3">
                 <i class="bi bi-envelope-fill me-2"></i> <strong>E-Mail</strong>
-                <p class="no_spacing">kontakt@goodhao.pl</p>
+                <p class="no_spacing"><a href="mailto:kontakt@goodhao.pl" >kontakt@goodhao.pl</a></p>
             </div>
 
             <div class="mt-3">
                 <i class="bi bi-telephone-fill me-2"></i><strong>Telefon</strong>
-                <p class="no_spacing">+48 533 580 803</p>
+                <p class="no_spacing"><a href="tel:+48533580803" >+48 533 580 803</a></p>
             </div>
 
             <div class="mt-3">
