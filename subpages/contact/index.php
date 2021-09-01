@@ -46,29 +46,29 @@ if (!isset($page)) {
                 </p>
             </div>
             <div>
-            <i class="bi bi-geo-alt-fill me-2"></i> <strong>Adres</strong>
-			<a href="google.navigation:q=50.95028348400445, 21.41137318479233&mode=d"><p class="no_spacing">Osiedle Stawki 17/11</p>
-                <p class="no_spacing">27-400 Ostrowiec Świętokrzyski</p></a>
+            <i class="bi bi-geo-alt-fill me-2"></i> <strong>Adres :</strong>
+			<i><a href="google.navigation:q=50.95028348400445, 21.41137318479233&mode=d"><p class="no_spacing">Osiedle Stawki 17/11</p>
+                <p class="no_spacing">27-400 Ostrowiec Świętokrzyski</p></i></a>
                 
             </div>
 
             <div class="mt-3">
-                <i class="bi bi-envelope-fill me-2"></i> <strong>E-Mail</strong>
-                <p class="no_spacing"><a href="mailto:kontakt@goodhao.pl" >kontakt@goodhao.pl</a></p>
+                <i class="bi bi-envelope-fill me-2"></i> <strong>E-Mail :</strong>
+                <p><i class="no_spacing"><a href="mailto:kontakt@goodhao.pl" class="no_spacing" >kontakt@goodhao.pl</a></i></p>
             </div>
 
             <div class="mt-3">
-                <i class="bi bi-telephone-fill me-2"></i><strong>Telefon</strong>
-                <p class="no_spacing"><a href="tel:+48533580803" >+48 533 580 803</a></p>
+                <i class="bi bi-telephone-fill me-2"></i><strong>Telefon :</strong>
+                <p><i class="no_spacing"><a href="tel:+48533580803" >+48 533 580 803</a></i></p>
             </div>
 
             <div class="mt-3">
-            <i class="bi bi-door-open-fill me-2"></i></i><strong>Godziny otwarcia:</strong>
-                <p class="no_spacing">Pn – Pt 7.00 – 21.00</p>
+            <i class="bi bi-door-open-fill me-2"></i></i><strong>Godziny otwarcia :</strong>
+                <p class="no_spacing">Pn – Pt w godz. 7.00 – 21.00</p>
             </div>
 
             <div class="mt-3">
-                <p>NIP: 6611227724</p>
+                <p><strong>NIP:</strong> 6611227724</p>
             </div>
         </div>
     </div>
