@@ -69,7 +69,7 @@ if (!isset($page)) {
             </div>
 
             <div class="mt-3">
-			<i class="bi bi-bank2"><strong>   NIP :</strong></i>  <i class="no_spacing">6611227724</i>
+			<i class="bi bi-bank2"><strong> NIP : </strong></i><i class="no_spacing">6611227724</i>
                
             </div>
         </div>
