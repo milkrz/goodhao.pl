@@ -45,7 +45,7 @@ if ($TPL->DebugMode) {
         <div class="container d-flex justify-content-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope"></i> <a href="mailto:contact@goodhao.pl">kontakt@goodhao.pl</a>
-                <i class="bi bi-phone"></i> +48 533 580 803
+                <i class="bi bi-phone"></i> <a href="tel:+48533580803" >+48 533 580 803</a>
             </div>
             <div class="d-none d-lg-flex social-links align-items-center">
                 <!-- <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a> -->
